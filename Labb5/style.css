@@ -1,0 +1,17 @@
+/* Error: expected "{".
+ *    ,
+ * 38 |       background: linear-gradient(90deg, #090953c2 0%, #062998 0%, #ffffff 50%, #ed2939 100%);
+ *    |                                                                                              ^
+ *    '
+ *   style.scss 38:94  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 38 \2502        background: linear-gradient(90deg, #090953c2 0%, #062998 0%, #ffffff 50%, #ed2939 100%);\d\a    \2502                                                                                               ^\a    \2575 \a   style.scss 38:94  root stylesheet';
+}
